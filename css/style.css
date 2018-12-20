@@ -1,0 +1,54 @@
+.bolinha{
+	width: 20px; 
+	height: 20px;
+	border-radius: 50%;
+	position: relative;
+
+	animation-name: bolinhas; /* Aqui eu dou o nome da animação */
+	animation-duration: 2s; /* Tempo de duração da animação */
+	animation-iteration-count: infinite;/* 5 */
+	animation-timing-function: linear;
+}
+
+.bolinha1{
+	background-color: red;
+}
+
+.bolinha2{
+	transform: translateY(-20px);
+	animation-delay: 0.2s;
+	background-color: black;
+}
+
+.bolinha3{
+	background-color: grey;
+	animation-delay: 0.4s;
+	transform: translateY(-40px);
+}
+
+@keyframes bolinhas{
+	0%{
+		left: 0;
+		top: 0px;
+	}
+
+	25%{
+		left: 200px;
+		top: 200px;
+	}
+
+	50%{
+		left: 200px;
+		top: 0px;
+	}
+
+	75%{
+		left: 0
+		top 200px;
+	}
+
+	100%{
+		left: 0px;
+		top: 0px;
+	}
+}
